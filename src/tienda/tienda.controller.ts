@@ -29,4 +29,9 @@ export class TiendaController {
     async listaProductos() {
         return await this.service.findProductos();
     }
+
+    @Get("/listaVentas")
+    async listaVentas() {
+        return await this.service.findVentas();
+    }
 }

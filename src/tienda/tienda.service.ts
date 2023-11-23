@@ -47,6 +47,10 @@ export class TiendaService {
         ])
     }
     
+    async findVentas() {
+        return await this.ventaModel.find({});
+    }
+
     async findProductos() {
         return await this.productoModel.find({});
     }
